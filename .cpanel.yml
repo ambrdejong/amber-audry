@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/amberd1q/repositories/amber-de-jong
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp style.css $DEPLOYPATH
