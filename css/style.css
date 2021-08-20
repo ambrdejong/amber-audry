@@ -1,0 +1,282 @@
+/* BACKGROUND IMAGE */
+img.bg {
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  img.bg {
+    height: 100vh;
+    min-width: 1000px;
+  }
+
+}
+
+body {
+  margin: auto 0;
+  background-color: #F2EEE5;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  margin-left: 70px;
+  margin-right: 80px;
+}
+
+@media screen and (max-width: 800px){
+  body {
+    margin-left: 20px;
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #800D0D;
+}
+
+h1:hover {
+	font-weight: 500;
+}
+
+h1.active {
+	font-weight: 500;
+}
+
+h2 {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  color: #222222;
+}
+
+h2:hover {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  h2:hover {
+    margin-left: 0px;
+    font-weight: 500;
+  }
+}
+
+
+/* NAV */
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation{
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+
+
+.sticky {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+li > a {
+  margin: 20px;
+}
+
+li h1 {
+  margin-left: 0px;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  a.line {
+    text-decoration: underline;
+  }
+  li {
+    margin-top: 10px;
+  }
+}
+
+
+a:hover {
+  font-weight: 700;
+}
+
+a.light {
+  color: #F2EEE5;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.push {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .push {
+    margin-left: 0px;
+  }
+}
+
+/* Dropdown menu */
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+  padding: 20px;
+}
+
+/* Add pointer cursor on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a color to dropdown links on hover */
+.dropdown-content a:hover {
+  font-weight: 700;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  grid-gap: 20px;
+}
+
+
+/* PROJECTS CONTAINER GRID */
+.container-projects {
+  display: grid;
+  grid-template-columns: 20% 5% 25% 25% 25%;
+  grid-template-rows: 10% 90%;
+  /* margin-left: 20px; */
+  grid-row-gap: 40px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-projects{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+
+.current {
+  margin-top: 50px;
+}
+
+
+.title {
+  grid-column: 1/span 3;
+}
+
+.projects-title {
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .title{
+    margin-top: 40px;
+  }
+}
+
+
+.description {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.projectsimg {
+  grid-column: 3 / span 4;
+  grid-row: 2;
+}
+
+.projectsimg img {
+  height: auto;
+  width: 70vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectsimg {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .projectsimg img{
+      width: 90vw;
+  }
+  .description {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+
+p.center{
+  text-align: center;
+  margin: 0px 50px 50px 50px;
+}
+
+div.contact {
+  margin-top: 10vh;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+a.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #800D0D;
+  /* margin-left: 47%; */
+}

@@ -1,0 +1,53 @@
+/* ABOUT CONTAINER GRID */
+.container-about {
+  display: grid;
+  grid-template-columns: 45%  40%;
+  grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .container-about {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 40px;
+    margin-top: 50px;
+  }
+}
+
+.bio{
+  grid-column: 1 /span 1;
+}
+
+
+.aboutimg {
+  grid-column-start: 2;
+  width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutimg {
+    grid-column-start: 1;
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+}
+
+div.cv{
+  display: grid;
+  grid-template-columns: 45%  50%;
+  grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  div.cv {
+    grid-template-columns: 100%;
+  }
+  }
+
+.container{
+  grid-column: 1 ;
+}
+
+.about-title{
+  text-transform: uppercase;
+}
